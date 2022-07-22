@@ -9,13 +9,13 @@ import Styles from './Styles'
 export default function RestPinThree({ navigation }) {
     const [point, setpoint] = useState(0.6);
     return (
-        <View style={{ flex: 1, backgroundColor: 'white' }}>
+        <View style={Styles.Main}>
             <View>
                 <TouchableOpacity onPress={() => { navigation.navigate('RestPinTwo') }}>
                     <Image source={require('../../../../assets/images/left.png')} style={Styles.Backbtn} />
                 </TouchableOpacity>
             </View>
-            <View style={Styles.Main}>
+            <View style={Styles.Databox}>
                 <View><Image source={require("../../../../assets/images/logo.jpg")} style={Styles.logo} resizeMode={'cover'} /></View>
                 <View>
                     <Text style={Styles.Title}>{Questions.Title}</Text>

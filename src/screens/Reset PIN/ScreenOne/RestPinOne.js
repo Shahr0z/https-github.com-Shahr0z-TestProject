@@ -12,8 +12,8 @@ export default function RestPinOne({ navigation }) {
         setpoint(0)
     });
     return (
-        <View style={{ flex: 1, backgroundColor: 'white' }}>
-            <View style={Styles.Main}>
+        <View style={Styles.Main}>
+            <View style={Styles.Databox}>
                 <View><Image source={require("../../../../assets/images/logo.jpg")} style={Styles.logo} resizeMode={'cover'} /></View>
                 <View>
                     <Text style={Styles.Title}>{Questions.Title}</Text>

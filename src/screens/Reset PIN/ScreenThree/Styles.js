@@ -7,6 +7,10 @@ const Styles = StyleSheet.create({
     },
     Main: {
         flex: 1,
+        backgroundColor: 'white'
+    },
+    Databox: {
+        flex: 1,
         width: '96%',
         justifyContent: 'center',
         alignSelf: 'center',
