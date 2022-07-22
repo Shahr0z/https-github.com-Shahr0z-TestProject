@@ -10,7 +10,7 @@ export default function Navgations() {
     const Stack = createStackNavigator();
     return (
         <NavigationContainer>
-            <Stack.Navigator screenOptions={{ headerShown: false, animation: 'none' }} initialRouteName={'RestPinOne'}>
+            <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName={'RestPinOne'}>
                 <Stack.Screen
                     name="RestPinOne"
                     component={RestPinOne}
