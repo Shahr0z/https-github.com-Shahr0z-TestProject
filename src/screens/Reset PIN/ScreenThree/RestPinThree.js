@@ -4,7 +4,7 @@ import ProgressBar from '../../ProgressBar/Index'
 import Questions from '../../../Language/Questions.json'
 import InputField from '../../../components/InputField';
 import CustomButton from '../../../components/CustomButton';
-import Styles from './Styles'
+import Styles from '../ScreenOne/Styles'
 
 export default function RestPinThree({ navigation }) {
     const [point, setpoint] = useState(0.6);
