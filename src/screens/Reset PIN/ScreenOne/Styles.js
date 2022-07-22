@@ -1,5 +1,10 @@
 import { StyleSheet } from 'react-native'
 const Styles = StyleSheet.create({
+    Backbtn: {
+        width: 30,
+        height: 30,
+        margin: '2%'
+    },
     Main: {
         flex: 1,
         backgroundColor: 'white'
