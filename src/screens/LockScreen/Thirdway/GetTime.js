@@ -5,7 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function GetTime() {
 
-    const [curTime, setcurTime] = useState([''])
+    const [curTime, setcurTime] = useState('')
     const [asynSetTime, setasynSetTime] = useState()
     const UpdateTime = asynSetTime + 60;
 
