@@ -4,6 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function GetTime() {
+
     const [curTime, setcurTime] = useState([''])
     const [asynSetTime, setasynSetTime] = useState()
     const UpdateTime = asynSetTime + 60;
@@ -12,7 +13,7 @@ export default function GetTime() {
     useEffect(() => {
         setInterval(() => {
             setcurTime(
-                [...curTime], new Date().getTime() / 1000 | 0
+                new Date().getTime() / 1000 | 0
             )
         }, 1000)
         storeData();
