@@ -5,15 +5,15 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function GetTime() {
 
-    const [curTime, setcurTime] = useState('')
+    const [curTime, setcurTime] = useState()
     const [asynSetTime, setasynSetTime] = useState()
-    const UpdateTime = asynSetTime + 60;
+    const UpdateTime = curTime + 120;
 
 
     useEffect(() => {
         setInterval(() => {
             setcurTime(
-                new Date().getTime() / 1000 | 0
+                Math.round(new Date().getTime() / 1000 | 0)
             )
         }, 1000)
         storeData();
@@ -49,7 +49,12 @@ export default function GetTime() {
     return (
         <View style={styles.mainBox}>
             <Text style={styles.textStyle}>GetTime</Text>
-            {curTime.map(item => { <Text style={styles.textStyle}>{item.toString()}</Text> })}
+            <Text style={styles.textStyle}>{curTime}</Text>
+
+            {/* {curTime.map(item => {
+                <Text style={styles.textStyle}>
+                    {item.value.toString()}</Text>
+            })} */}
             <Text style={styles.textStyle}>{asynSetTime}</Text>
             <Text style={styles.textStyle}>{UpdateTime}</Text>
         </View>
