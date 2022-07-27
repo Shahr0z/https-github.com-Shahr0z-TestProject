@@ -4,7 +4,7 @@ import Styles from './Styles'
 
 export default function TwoFactorAuthentication() {
     const [isEnabled, setIsEnabled] = useState(false);
-    const [isEnabledTwo, setIsEnabledTwo] = useState(false);
+    const [isEnabledTwo, setIsEnabledTwo] = useState(true);
     const [isEnabledThree, setIsEnabledThree] = useState(false);
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
     const toggleSwitchTwo = () => setIsEnabledTwo(previousState => !previousState);
